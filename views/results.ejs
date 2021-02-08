@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<link href="/results.css" type="text/css" rel="stylesheet">
+
+<h1>Search Results</h1>
+
+<ul>
+    <% data.Search.forEach((movie)=>{ %>
+        <li><%= movie.Title %> - <%= movie.Year %></li>
+    <% }); %>
+</ul>
+
+<%- include("partials/footer") %>
